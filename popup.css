@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap'); */
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.feature {
+    width: 270px;
+    background-color: #F1F3F4;
+    border-radius: 6px;
+}
+
+.feature p {
+    color: #686868;
+    margin: 10px 10px 10px 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    color: #353535;
+    font-weight: bolder;
+    font-size: 24px;
+    align-self: center;
+    background: -webkit-linear-gradient(#353535, #353535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.betaTxt {
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.timer {
+    color: #fc4b1a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.timer_text {
+    font-size: 30px;
+    font-weight: 600;
+    color: #363636;
+}
+
+.alertMsg {
+    color: #aaaaaa;
+}
+
+.selection {
+    /* Reset */
+    appearance: none;
+    background-color: #F1F3F4;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    color: black;
+    border-radius: 0.25em;
+    cursor: pointer;
+    /* <option> colors
+    option {
+      color: inherit;
+      background-color: #320a28;
+    }
+    /* Remove focus outline */
+    /* &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    /* &::-ms-expand {
+      display: none;
+    } */ 
+}
+
+  button {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: #353535;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 14px 56px -11px #353535;
+    width: 150px;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+   }
+
+   .request-loader {
+    margin-top: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    width: 60px;
+    border-radius: 100%;
+    background: #ffffff;
+}
+.request-loader span {
+    position: relative;
+    font-size: 72px;
+    top: 5px;
+    left: -5px;
+}
+.request-loader::after {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 8px solid rgba(0,0,0,0.2);
+    border-radius: 100%;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+    z-index: -1;
+}
+.request-loader::before {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 8px solid rgba(0,0,0,0.2);
+    border-radius: 100%;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+    z-index: -1;
+}
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale3d(0.75, 0.75, 1);
+   }
+    to {
+        opacity: 0;
+        transform: scale3d(1.5, 1.5, 1);
+   }
+}
+
+
+/* footer {
+    margin-top: 40px;
+}
+a:link {
+    color: #F1F3F4;
+  } */
