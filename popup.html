@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script src="popup.js"></script>
+    <h1> Relaxo <span class = "betaTxt">Beta</span></h1>
+    <div class = "feature"><p>You deserve a break . All you have to do is set the timer and never touch your mouse</p></div>
+        <p class="timer">Take a break from the screen</p>
+        <div class = "timer_text"></div>
+        <div class = "alertMsg"></div>
+        <br>
+        <div class="request-loader">
+            <span></span>
+        </div>
+        <!-- <div class="selection">
+        <button type = "submit" value = 2>1 min</button>
+        <button type = "submit" value = 5>5 min</button>
+        <button type = "submit" value = 10>10 min</button>
+        </div> -->
+        <select class="selection">
+            <option value="none" selected disabled hidden>Select time</option>
+            <option value="1">1 Mins</option>
+            <option value="5">5 Mins</option>
+            <option value="7">7 Mins</option>
+        </select>
+        <br>
+        <button class="start_btn">Start</button>
+        <button class="restart_btn">Take another break</button>
+        <!-- <footer>
+            <a href=/a>
+        </footer> -->
+</body>
+</html>
