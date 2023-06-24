@@ -1,2 +1,2 @@
 # take-a-break
-chrome extention
+A chrome extension that lets you take a break from your device and relax
